@@ -1,4 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-
-ReactDOM.render(<p>Hello world!!!</p>, document.getElementById('root'));
+import Contact from './contact'
+class App extends React.Component{
+	render(){
+		return(
+			<div>
+				<Contact/>
+			</div>
+			
+		)
+	}
+}
+ReactDOM.render(<App/>, document.getElementById('root'));
