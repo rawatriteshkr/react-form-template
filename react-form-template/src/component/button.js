@@ -6,7 +6,8 @@ class SubmitButton extends React.Component {
 		return (
 			<div>
 				<button id={this.props.id} type={this.props.type} onclick={() => {
-		window.alert('Form Submitted!!!')}}>{this.props.buttonName}</button>
+					window.alert('Form Submitted!!!')
+				}}>{this.props.buttonName}</button>
 			</div>
 		)
 	}

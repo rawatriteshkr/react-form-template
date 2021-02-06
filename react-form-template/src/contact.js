@@ -13,7 +13,7 @@ class Contact extends React.Component {
 				<head>
 					<meta charSet='utf-8'></meta>
 					<title>User Contact</title>
-					
+
 				</head>
 				<body>
 					<div class='container'>
@@ -21,19 +21,27 @@ class Contact extends React.Component {
 							<div class="column col-auto col-mx-auto">
 								<div class="form-group">
 									<form target="_self" id="bootstrapForm">
-										<fieldset style={{border:'none'}}>
-											<h2>Contact Form<br></br><small>Required</small></h2>
+										<fieldset style={{ border: 'none' }}>
+											<h2 style={{ alignContent: 'center' }}>Contact Form</h2>
 										</fieldset>
 										<InputField id='fname' label='FirstName' type='text' />
 										<InputField id='lname' label='LastName' type='text' />
 										<InputField id='phone' label='Phone Number' type='text' />
 										<InputField id='email' label='Email' type='text' />
 										<TextArea id='address' label='Address' />
-										<Label id='radioContact' label='Preferred Contact' />
-										<RadioButton id='radioContact' type='radio' radioButtonLabel='Email' radioValue='email' />
-										<RadioButton id='radioContact' type='radio' radioButtonLabel='Phone' radioValue='phone' />
+										<fieldset style={{ border: 'none' }}>
+											<table>
+												<tr>
+													<td style = {{width : '81.6%'}}><Label id='radioContact' label='Preferred Contact' /></td>
+													<td>
+														<RadioButton id='radioContact' style= {{width: '28%'}} type='radio' radioButtonLabel='Email' radioValue='email' />
+														<RadioButton id='radioContact' style= {{width: '28%'}} type='radio' radioButtonLabel='Email' radioValue='email' />
+													</td>
+												</tr>
+											</table>
+										</fieldset>
 										<TextArea id='message' label='Your Message' />
-										<SubmitButton id='submitButton' type='submit' buttonName='Submit' />
+										<SubmitButton id='submitButton' color="primary" type='submit' buttonName='Submit' />
 									</form>
 								</div>
 							</div>
